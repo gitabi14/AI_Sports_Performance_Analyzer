@@ -1,0 +1,8 @@
+streamlit>=1.32.0
+opencv-python-headless>=4.9.0
+# IMPORTANT: mediapipe>=0.10.31 removed the legacy `mediapipe.solutions` API from
+# the published wheels (open upstream packaging bug). Pin below 0.10.31 or this
+# app will fail with: AttributeError: module 'mediapipe' has no attribute 'solutions'
+
+numpy>=1.24.0
+mediapipe<0.10.31
